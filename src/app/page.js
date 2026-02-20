@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="container max-w-6xl mx-auto py-10">
+    <div className="min-h-screen bg-stone-50 text-stone-900">   
+    <section className="pt-32 pb-20 px-4">
+      <Button variant="default">Click Me</Button>
+    </section>
     </div>
   );
 }
