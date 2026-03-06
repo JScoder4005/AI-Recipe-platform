@@ -11,10 +11,11 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { Cookie, Refrigerator } from "lucide-react";
+import UserDropdown from "@/components/UserDropdown";
 
 const Header = async () => {
   const user = null;
-  console.log("user", user);
+  // console.log("user", user);
 
   return (
     <header className="fixed top-0 w-full border-b border-stone-200 bg-stone-50/80 backdrop-blur-md z-50 supports-backdrop-filter:bg-stone50/60">
@@ -48,7 +49,7 @@ const Header = async () => {
           <SignInButton>
 
             {/* how to cook */}
-            <UserButton />
+            <UserDropdown/>
           </SignInButton>
           <SignedOut>
             <SignInButton mode="modal">
@@ -67,7 +68,7 @@ const Header = async () => {
           </SignedOut>
           {/* Show the user button when the user is signed in */}
           <SignedIn>
-            <UserButton />
+            {/* <UserButton /> */}
           </SignedIn>
         </div>
       </nav>
